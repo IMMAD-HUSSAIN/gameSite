@@ -1,0 +1,30 @@
+body {
+  background-image: url("./Assests/Images/wallpaperflare.com_wallpaper\ \(2\).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100svh;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Cinzel-Regular";
+  src: url("./Assests/Fonts/Cinzel/Cinzel-Regular.ttf");
+}
+@font-face {
+  font-family: "Cinzel-Medium";
+  src: url("./Assests/Fonts/Cinzel/Cinzel-Medium.ttf");
+}
+@font-face {
+  font-family: "Cinzel-Bold";
+  src: url("./Assests/Fonts/Cinzel/Cinzel-Bold.ttf");
+}
+
+.cinzelMedium {
+  font-family: Cinzel-Medium !important;
+}
+.cinzelRegular {
+  font-family: Cinzel-Regular !important;
+}
+.cinzelBold {
+  font-family: Cinzel-Bold !important;
+}

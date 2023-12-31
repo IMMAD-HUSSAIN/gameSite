@@ -1,0 +1,418 @@
+.color {
+  color: #ffba31;
+}
+.bgcolor {
+  background-color: #ffba31;
+}
+.pointer {
+  cursor: pointer;
+}
+.pointer:hover {
+  color: #ffba31;
+}
+/* <-----------> */
+.loader {
+  transform: rotateZ(45deg);
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  transform: rotateX(70deg);
+  animation: 1s spin linear infinite;
+}
+.loader:after {
+  color: #ffba31;
+  transform: rotateY(70deg);
+  animation-delay: 0.4s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+  }
+}
+
+@keyframes rotateccw {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    box-shadow: 0.5em 0px 0 0px currentcolor;
+  }
+  12% {
+    box-shadow: 0.5em 0.5em 0 0 currentcolor;
+  }
+  25% {
+    box-shadow: 0 0.5em 0 0px currentcolor;
+  }
+  37% {
+    box-shadow: -0.5em 0.5em 0 0 currentcolor;
+  }
+  50% {
+    box-shadow: -0.5em 0 0 0 currentcolor;
+  }
+  62% {
+    box-shadow: -0.5em -0.5em 0 0 currentcolor;
+  }
+  75% {
+    box-shadow: 0px -0.5em 0 0 currentcolor;
+  }
+  87% {
+    box-shadow: 0.5em -0.5em 0 0 currentcolor;
+  }
+}
+
+/* <--------> */
+.ubisoft {
+  color: #ffba31;
+  font-size: 25px;
+  font-weight: 600;
+}
+.navButton {
+  margin: 0px 5px;
+  background: transparent !important;
+  border: none;
+  color: white;
+  font-size: 25px;
+}
+.navButton:hover {
+  color: #ffba31;
+}
+.closeBtn {
+  cursor: pointer;
+  border: 2px solid #ffba31;
+  border-radius: 50px;
+  margin-left: auto !important;
+  margin: 20px;
+  margin-top: 30px;
+}
+.navButton:focus {
+  color: #ffba31;
+}
+.topbarDivShow {
+  animation: topbarAnimationShow 0.7s ease-in-out;
+}
+
+.topbarDivHide {
+  visibility: hidden;
+}
+
+@keyframes topbarAnimationShow {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.bars {
+  cursor: pointer;
+  border: none;
+  display: none;
+  box-shadow: none !important;
+}
+
+.offCanvasButton {
+  color: #ffba31;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.offCanvasButton:focus {
+  color: antiquewhite !important;
+  background-color: transparent !important;
+}
+@media screen and (max-width: 650px) {
+  .largeNav {
+    display: none;
+  }
+  .bars {
+    display: block;
+  }
+  s .large {
+    font-size: 4.4em !important;
+  }
+  .small {
+    font-size: 2.5em !important;
+  }
+}
+@media screen and (max-width: 520px) {
+  .large {
+    font-size: 3.4em !important;
+  }
+  .small {
+    font-size: 1.9em !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .large {
+    font-size: 3em !important;
+  }
+  .small {
+    font-size: 1.4em !important;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .largeNav {
+    display: none;
+  }
+  .bars {
+    display: block;
+  }
+}
+
+.card-slider {
+  position: fixed;
+  height: 160px;
+  bottom: 10px;
+  right: 0px;
+}
+.slideShow {
+  opacity: 1;
+  animation: slideShow 0.7s ease-in-out;
+}
+.slideHide {
+  opacity: 0;
+  animation: slidehide 0.7s ease-in-out;
+}
+.hide {
+  display: none !important;
+}
+@keyframes slideShow {
+  from {
+    opacity: 0;
+    transform: translateY(90%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slidehide {
+  from {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+.cardSliderdiv {
+  width: 310px !important ;
+  height: 180px !important;
+  cursor: pointer;
+}
+@media screen and (max-width: 1199px) {
+  .cardSlider {
+    width: 100% !important;
+  }
+  .cardSliderdiv {
+    width: 250px !important;
+  }
+}
+.cardSlider {
+  width: 80%;
+}
+.slidercard {
+  border-color: #ffba31;
+  width: 75%;
+}
+.slidercard:hover {
+  box-shadow: #ffba31 0px 3px 8px !important;
+}
+.sliderImage {
+  border-radius: 10px;
+  width: 95%;
+  height: 130px;
+}
+.arrowButton {
+  border: 2px solid #ffba31;
+  cursor: pointer;
+  color: snow;
+  border-radius: 50%;
+  font-weight: 800;
+}
+.arrowButton:hover {
+  border-color: snow;
+  box-shadow: #ffba31 0px 2px 10px 0px;
+  color: #ffba31;
+}
+/* <----> */
+.homeText {
+  color: whitesmoke;
+  width: 100%;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+.homeText:nth-child(2) {
+  animation: fade-in 0.9s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.assassins {
+  text-align: center;
+  text-transform: uppercase;
+  color: whitesmoke;
+  animation: assassins 1s ease-in;
+}
+@keyframes assassins {
+  0% {
+    transform: translateY(90%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.large {
+  font-size: 4em;
+}
+.small {
+  position: relative;
+  bottom: 20px;
+  font-size: 1.9em;
+}
+
+.infoPage {
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  background-color: #000;
+}
+
+.infoPage::-webkit-scrollbar {
+  width: 7px;
+  position: absolute;
+  background-color: transparent;
+}
+.infoPage::-webkit-scrollbar-thumb {
+  background-color: #ffba31;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+.gamePoster {
+  /* Your existing styles */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 100%;
+}
+.posterImage{
+  width: 100%;
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  .gamePoster {
+    background-size: contain;
+    height: fit-content;
+  }
+}
+.requirements {
+  font-size: 20px;
+}
+.specHeading {
+  color: #ffba31;
+  font-weight: 700;
+}
+.pImage {
+  border: 2px solid #ffba31;
+  border-radius: 10px;
+  height: 330px;
+}
+.trailer {
+  font-size: 55px;
+}
+.videoBtn {
+  padding: 5px 20px;
+  background-color: transparent;
+  border: 1px solid #ffba31;
+  color: #ffba31;
+}
+.videoBtn:hover {
+  background-color: transparent !important;
+  border: 1px solid #ffba31 !important;
+  color: #ffba31 !important;
+}
+.pauseBtn {
+  border-radius: 20px 5px 20px;
+}
+.playBtn {
+  border-radius: 5px 20px 5px;
+}
+
+.videoDiv {
+  border: 2px solid #ffba31;
+  border-radius: 20px;
+  width: 80%;
+  height: 600px;
+  margin-bottom: 60px;
+}
+.video {
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .videoDiv {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .videoDiv {
+    width: 95%;
+  }
+}
+.footer {
+  text-transform: capitalize !important;
+}
+.hr {
+  height: 5px !important;
+  color: #fff;
+  background-color: #fff;
+}
